@@ -15,6 +15,7 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
