@@ -1,5 +1,5 @@
 doctype html
-html.no-js
+html.no-js.bg-block(lang="ru")
   head
     meta(charset='utf-8')
     title Айкидо в Москве - Александр Яценко
@@ -55,47 +55,50 @@ html.no-js
       footer(itemscope itemtype="http://schema.org/Organization")
         .row
           .col-md-4
-            .row
-              .col-sm-12
-                h4 Контактная информация
-                span(itemprop="name") Айкидо клуб Александра Яценко
-            .row
-              .col-sm-12
-                Телефон:
-                span(itemprop="telephone") 
-                  a(href="tel:+79265382767") +7(926)-538-27-67
-            .row
-              .col-sm-12
-                Электронная почта:
-                span(itemprop="email") 
-                  a(href="mailto:katananotamashi@gmail.com") katananotamashi@gmail.com
-            .row
-              .col-sm-12
-                a(href="https://vk.com/byakasan")
-                  img(src='vk.png', alt:'вконтакте', class:'img-rounded social-icon')
-                  Александр Яценко
+            .footer-bl
+              .row
+                .col-sm-12
+                  h4 Контактная информация
+                  span(itemprop="name") Айкидо клуб Александра Яценко
+              .row
+                .col-sm-12
+                  Телефон:
+                  span(itemprop="telephone") 
+                    a(href="tel:+79265382767") +7(926)-538-27-67
+              .row
+                .col-sm-12
+                  Электронная почта:
+                  span(itemprop="email") 
+                    a(href="mailto:katananotamashi@gmail.com") katananotamashi@gmail.com
+              //- .row
+              //-   .col-sm-12
+              //-     a(href="https://vk.com/byakasan")
+              //-       img(src='vk.png', alt:'вконтакте', class:'img-rounded social-icon')
+              //-       Александр Яценко
                 
           .col-md-4(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-            .row
-              .col-sm-12
-                h4 Тренировки айкидо для взрослых
-                span(itemprop="addressLocality") Москва
-            .row
-              .col-sm-12
-                span(itemprop="streetAddress")
-                  м. Дмитровская,
-                  ул. Складочная, д. 3, с. 7
+            .footer-bl
+              .row
+                .col-sm-12
+                  h4 Тренировки айкидо для взрослых
+                  span(itemprop="addressLocality") Москва
+              .row
+                .col-sm-12
+                  span(itemprop="streetAddress")
+                    м. Дмитровская,
+                    ул. Складочная, д. 3, с. 7
                 
           .col-md-4(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-            .row
-              .col-sm-12
-                h4 Тренировки айкидо для детей
-                span(itemprop="addressLocality") Москва
-            .row
-              .col-sm-12
-                span(itemprop="streetAddress")
-                  м. Ясенево,
-                  Литовский бульвар, д. 11, к.2
+            .footer-bl
+              .row
+                .col-sm-12
+                  h4 Тренировки айкидо для детей
+                  span(itemprop="addressLocality") Москва
+              .row
+                .col-sm-12
+                  span(itemprop="streetAddress")
+                    м. Ясенево,
+                    Литовский бульвар, д. 11, к.2
       
     // build:js scripts/vendor.js
     // bower:js
@@ -104,20 +107,24 @@ html.no-js
     // endbuild
 
     // build:js scripts/plugins.js
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js')
-    script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js')
+    //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js')
     // endbuild
 
     // build:js scripts/main.js
     script(src='scripts/main.js')
+    // endbuild
+
+    // build:js scripts/yandex_metrika.js
+    script(src='scripts/yandex_metrika.js')
     // endbuild

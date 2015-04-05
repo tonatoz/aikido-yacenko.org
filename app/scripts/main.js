@@ -1,3 +1,3 @@
 /* jshint devel:true */
 // console.log('\'Allo \'Allo!');
-$(document).on('touchstart', -> )
+$(document).on('touchstart', function() {} )

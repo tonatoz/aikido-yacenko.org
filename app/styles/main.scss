@@ -4,95 +4,101 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
 
-/* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: url(/images/bg/fudzy_maple.png) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto Slab', serif;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+footer {
+  margin: 40px 20px 30px 20px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+h1, h2, h3, h4 {
+  color: white;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+p, li {
+  color: white;
+  font-size: 18px;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+img {
+  @extend .img-responsive;
 }
 
 article {
+  padding-top: 10px;
   margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+.footer-bl {
+  background-color: rgba(white, 0.6);
+  min-height: 110px;
+  padding: 0px 25px;
+  h1, h3, h4, p {
+    color: black;
   }
 }
+
+// Index
+.marketing-bl {
+  background-color: rgba(grey, 0.3);
+  margin: 20px;
+  padding: 10px;
+}
+
+.marketing-call-bl {
+  background-color: rgba(white, 0.4);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.text-bl {
+  background-color: rgba(black, 0.5);
+  margin: 20px;
+  padding: 15px;
+}
+
+#adult-map-bl {
+    min-height: 400px;
+}
+
+#child-map-bl {
+  min-height: 400px;
+}
+
+
+// /* Responsive: Portrait tablets and up */
+// @media screen and (min-width: 768px) {
+//   .container {
+//     max-width: 730px;
+//   }
+//
+//   /* Remove the padding we set earlier */
+//   .header,
+//   .marketing,
+//   .footer {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+//
+//   /* Space out the masthead */
+//   .header {
+//     margin-bottom: 30px;
+//   }
+//
+//   /* Remove the bottom border on the jumbotron for visual effect */
+//   .jumbotron {
+//     border-bottom: 0;
+//   }
+// }
