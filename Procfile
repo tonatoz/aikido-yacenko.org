@@ -1,1 +1,1 @@
-web: npm start
+web: bower install && gulp default
