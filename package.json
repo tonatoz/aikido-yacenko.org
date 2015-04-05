@@ -26,5 +26,9 @@
     "main-bower-files": "^2.5.0",
     "opn": "^1.0.0",
     "wiredep": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node app",
+    "postinstall": "gulp default"
   }
 }
