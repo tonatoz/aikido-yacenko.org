@@ -1,2 +1,2 @@
 /* jshint devel:true */
-$(document).on('touchstart', function() {} );
+// $(document).on('touchstart', function() {} );

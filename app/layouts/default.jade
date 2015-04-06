@@ -17,10 +17,6 @@ html.no-js.bg-block(lang="ru")
     link(rel='stylesheet' href='styles/main.css')
     // endbuild
 
-    // build:js scripts/vendor/modernizr.js
-    script(src='../bower_components/modernizr/modernizr.js')
-    // endbuild
-
   body
     | <!--[if lt IE 10]>
     |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -42,8 +38,6 @@ html.no-js.bg-block(lang="ru")
               ul.nav.navbar-nav
                 li
                   a(href="/about.html") О клубе
-                //- li
-                //-  a(href="/aikido.html") Айкидо
                 li
                   a(href="/child.html") Айкидо для детей
                 li
@@ -102,6 +96,7 @@ html.no-js.bg-block(lang="ru")
       
     // build:js scripts/vendor.js
     // bower:js
+    script(src='../bower_components/modernizr/modernizr.js')
     script(src='../bower_components/jquery/dist/jquery.js')
     // endbower
     // endbuild
@@ -120,8 +115,6 @@ html.no-js.bg-block(lang="ru")
     //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js')
     //- script(src='../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js')
     // endbuild
-    
-    
 
     // build:js scripts/main.js
     script(src='scripts/main.js')
