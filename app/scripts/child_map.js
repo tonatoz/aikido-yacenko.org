@@ -2,6 +2,7 @@ ymaps.ready(init);
 var myMap, myPlacemark;
 
 function init() {
+  "use strict";
     myMap = new ymaps.Map("child-map-bl", {
         center: [55.60983089, 37.53996731],
         zoom: 15
