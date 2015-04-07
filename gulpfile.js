@@ -5,6 +5,8 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+//var buster = require('gulp-buster');
+
 
 gulp.task('views', function () {
   return gulp.src('app/*.jade')
@@ -26,6 +28,7 @@ gulp.task('styles', function () {
     ]))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
+    //.pipe(buster('busters.json'))
     .pipe(reload({stream: true}));
 });
 

@@ -8,10 +8,6 @@ html.no-js(lang="ru")
     meta(name="description" content="Занятия айкидо, метро Дмитровская, Москва")
     // Place favicon.ico and apple-touch-icon.png in the root directory
 
-    // build:css styles/main.css
-    link(rel='stylesheet' href='styles/main.css')
-    // endbuild
-
   body
     | <!--[if lt IE 10]>
     |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -53,12 +49,10 @@ html.no-js(lang="ru")
                   span(itemprop="name") Айкидо клуб Александра Яценко
               .row
                 .col-sm-12
-                  | Телефон:
                   span(itemprop="telephone")
                     a(href="tel:+79265382767") +7(926)-538-27-67
               .row
                 .col-sm-12
-                  | Email:
                   span(itemprop="email")
                     a(href="mailto:katananotamashi@gmail.com") katananotamashi@gmail.com
                   .visible-xs.visible-sm
@@ -90,6 +84,10 @@ html.no-js(lang="ru")
                     | м. Ясенево,
                     | Литовский бульвар, д. 11, к.2
 
+
+    // build:css styles/main.css
+    link(rel='stylesheet' href='styles/main.css')
+    // endbuild
 
     // build:js scripts/main.js
     script(src='../bower_components/modernizr/modernizr.js')
