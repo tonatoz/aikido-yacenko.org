@@ -1,18 +1,30 @@
 doctype html
-html.no-js(lang="ru")
+html(lang='ru')
   head
     meta(charset='utf-8')
-    title Айкидо в Москве - Александр Яценко
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(name="keywords" content="айкидо, айкидо в Москве, метро Дмитровская, метро Савеловская, айкидо школа, секция айкидо, айкидо для взрослых, айкидо для женщин, айкидо для детей, уроки айкидо, федерация айкидо")
-    meta(name="description" content="Занятия айкидо, метро Дмитровская, Москва")
-    // Place favicon.ico and apple-touch-icon.png in the root directory
 
-  body
-    | <!--[if lt IE 10]>
-    |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    title Айкидо в Москве - клуб Александра Яценко
+
+    meta(name='keywords' content='айкидо, айкидо айкикай, восточные единоборства, боевые искусства, айкидо в Москве, айкидо Дмитровская, айкидо Савеловская, айкидо Ясенево, айкидо школа, секция айкидо, айкидо для взрослых, айкидо для женщин, айкидо для детей, уроки айкидо, федерация айкидо')
+    meta(name='description' content="Занятие айкидо айкикай для взрослых на Дмитровской и для детей в Ясенево")
+
+    // OpenGraph meta
+    meta(property="og:title" content='Айкидо в Москве - клуб Александра Яценко')
+    meta(property="og:site_name" content='Клуб айкидо Александра Яценко')
+    meta(property="og:description" content="Занятие айкидо айкикай для взрослых на Дмитровской и для детей в Ясенево")
+    meta(property="og:locale" content="ru_RU")
+    meta(property="og:image" content="http://aikido-yacenko.org/images/about/sensei.jpg")
+
+    link(rel="icon" href="/images/favicon.ico")
+    link(rel="apple-touch-icon" href="/images/apple-touch-icon.png")
+
+    | <!--[if lt IE 9]>
+    |   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    |   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     | <![endif]-->
-
+  body
     .container-fluid
       header(role="navigation")
         nav.navbar.navbar-default.navbar-fixed-top
@@ -23,7 +35,7 @@ html.no-js(lang="ru")
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-              a.navbar-brand(href="/index.html")
+              a.navbar-brand(href="/")
                 | Айкидо клуб
                 span.hidden-xs.hidden-sm  Александра Яценко
 
