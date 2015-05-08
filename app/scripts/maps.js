@@ -1,17 +1,18 @@
 ymaps.ready(init);
 
 function adultMap() {
-  var adultMap = new ymaps.Map("adult-map-bl", {
+  'use strict';
+  var map = new ymaps.Map('adult-map-bl', {
     center: [55.80637494, 37.58877380],
     zoom: 15
   });
 
-  var adultPlacemark = new ymaps.Placemark([55.80642328, 37.59323700], {
+  var placemark = new ymaps.Placemark([55.80642328, 37.59323700], {
     hintContent: 'Секция айкидо',
     balloonContent: 'Московский центр единоборств «Lukomsky Dojo»'
   });
 
-  var adultPolyline = new ymaps.Polyline(
+  var polyline = new ymaps.Polyline(
     [[55.80809697, 37.58155866],
       [55.80797009, 37.58103295],
       [55.80572236, 37.58255108],
@@ -22,22 +23,23 @@ function adultMap() {
       [55.80642328, 37.59323700]], {}, {strokeWidth: 4}
   );
 
-  adultMap.geoObjects.add(adultPlacemark);
-  adultMap.geoObjects.add(adultPolyline);
+  map.geoObjects.add(placemark);
+  map.geoObjects.add(polyline);
 }
 
 function childMap() {
-  var childMap = new ymaps.Map("child-map-bl", {
+  'use strict';
+  var map = new ymaps.Map('child-map-bl', {
     center: [55.60983089, 37.53996731],
     zoom: 15
   });
 
-  var childPlacemark = new ymaps.Placemark([55.61349878, 37.54189850], {
+  var placemark = new ymaps.Placemark([55.61349878, 37.54189850], {
     hintContent: 'Секция айкидо',
     balloonContent: 'СК Атлант'
   });
 
-  var childPolyline = new ymaps.Polyline(
+  var polyline = new ymaps.Polyline(
     [[55.60602034, 37.53515311],
       [55.61198085, 37.53940518],
       [55.61223283, 37.53940717],
@@ -45,18 +47,18 @@ function childMap() {
       [55.61349878, 37.54189850]], {}, {strokeWidth: 4}
   );
 
-  childMap.geoObjects.add(childPlacemark);
-  childMap.geoObjects.add(childPolyline);
+  map.geoObjects.add(placemark);
+  map.geoObjects.add(polyline);
 }
 
 function init() {
-  "use strict";
+  'use strict';
 
-  if ($("#adult-map-bl").length > 0) {
+  if ($('#adult-map-bl').length > 0) {
     adultMap();
   }
 
-  if ($("#child-map-bl").length > 0) {
+  if ($('#child-map-bl').length > 0) {
     childMap();
   }
 }
