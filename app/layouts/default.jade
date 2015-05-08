@@ -101,6 +101,8 @@ html(lang='ru')
     link(rel='stylesheet' href='styles/main.css')
     // endbuild
 
+    script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+
     // build:js scripts/main.js
     script(src='../bower_components/modernizr/modernizr.js')
     script(src='../bower_components/jquery/dist/jquery.js')
@@ -117,5 +119,10 @@ html(lang='ru')
     // script(src='../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js')
     // script(src='../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js')
     script(src='scripts/main.js')
-    script(src='scripts/yandex_metrika.js')
+    script(src='scripts/maps.js')
     // endbuild
+
+    // yandex metrika
+    noscript
+      div
+        img(src="//mc.yandex.ru/watch/26160183" style="position:absolute; left:-9999px;" alt="")
